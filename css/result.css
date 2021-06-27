@@ -1,3 +1,41 @@
 #result{
   display:none;
+  background-color: #DDA0DD;
+  width: 80%;
+  text-align:center;
+  border-radius: 20px;
+}
+
+.resultName{
+  font-size: 35px;
+}
+
+.kakao{
+  color:black;
+  background-color: #FEE500;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.study{
+  color:black;
+  background-color: whitesmoke;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.kakao:hover, .kakao:focus{
+  background-color: black;
+  color: #FEE500;
+}
+
+.study:hover, .study:focus{
+  background-color: black;
+  color: whitesmoke;
+}
+.resultDesc, .subtext{
+  font-family: 'DungGeunMo';
+  font-size:20px;
 }
