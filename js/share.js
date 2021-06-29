@@ -6,7 +6,7 @@ function kakaoShare(){
   Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
-      title: '우정 모의고사',
+      title: '[우정 모의고사]',
       description: '우리 우정의 소소한 중간평가',
       imageUrl:
         'https://leedy-s2.github.io/friendship_test/img/main.gif',
