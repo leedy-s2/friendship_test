@@ -1,6 +1,7 @@
-const shareUrl = 'https://leedy-s2.github.io/friendship_test';
 
 function kakaoShare(){
+  const shareUrl = 'https://leedy-s2.github.io/friendship_test';
+
   Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
