@@ -1,3 +1,1 @@
 # friendship_test
-
-#ㅇ
