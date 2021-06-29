@@ -1,11 +1,29 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector('#result');
+const ansNote = document.querySelector('#ansNote');
+
 const endPoint = 13;
 const choice1 = [];
 const choice2 = [];
 var point = 0;
 var level = 0;
+
+function note(){
+  result.style.WebkitAnimation="fadeOut 1s";
+  result.style.animation = "fadeOut 1s";
+  setTimeout(() => {
+    qna.style.WebkitAnimation="fadeIn 1s";
+    qna.style.animation = "fadeIn 1s";
+    setTimeout(() => {
+      result.style.display = "none";
+      qna.style.display="block";
+    }, 450)
+    let qIdx = 0;
+    goNext(qIdx, 2);
+  }, 450);
+}
+
 
 function getKeyByValue(point) {
   console.log(point);
@@ -37,8 +55,8 @@ function goMain(){
     setTimeout(() => {
       qna.style.display = "none";
       main.style.display="block";
-    }, 450)})
-    console.log(choice1);
+    }, 450)
+  },450)
   }
 
   function setResult(){
@@ -60,16 +78,19 @@ function goMain(){
     resultName.innerHTML = infoList[level].name;
     resultName.classList.add('title');
 
-    var resultImg = document.createElement('img');
+    const resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
     var imgURL = 'img/image-'+level+'.png';
     resultImg.src = imgURL;
-    resultImg.alt = 0;
+    resultImg.alt = level;
     resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
 
     const resultDesc = document.querySelector('.resultDesc');
     resultDesc.innerHTML = infoList[level].desc;
+
+    point = 0;
+    level = 0;
   }
 
   function goResult(){
@@ -81,7 +102,8 @@ function goMain(){
       setTimeout(() => {
         qna.style.display = "none";
         result.style.display="block";
-      }, 450)})
+      }, 450)
+    }, 450)
 
       console.log(choice1);
       console.log(choice2);
