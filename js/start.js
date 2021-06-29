@@ -8,22 +8,6 @@ const choice2 = [];
 var point = 0;
 var level = 0;
 
-function note(){
-  result.style.WebkitAnimation="fadeOut 1s";
-  result.style.animation = "fadeOut 1s";
-  setTimeout(() => {
-    qna.style.WebkitAnimation="fadeIn 1s";
-    qna.style.animation = "fadeIn 1s";
-    setTimeout(() => {
-      result.style.display = "none";
-      qna.style.display="block";
-    }, 450)
-    let qIdx = 0;
-    goNext(qIdx, 2);
-  }, 450);
-}
-
-
 function getKeyByValue(point) {
   console.log(point);
   for(var key in fshipLevel){
