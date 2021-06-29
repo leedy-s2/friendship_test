@@ -14,3 +14,7 @@ background-color: white;
 p{
   font-size: 20px;
 }
+
+.txt_name, .txt_friend{
+  width:20%;
+}
