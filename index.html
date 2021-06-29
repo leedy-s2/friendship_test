@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://leedy-s2.github.io/friendship_test/" />
   <meta property="og:title" content="우정모의고사" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="img/img.gif" />
+  <meta property="og:image" content="img/main.gif" />
   <meta property="og:description" content="우리 우정의 소소한 중간평가" />
 
   <!-- favicon-->
@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="./css/qna.css">
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/result.css">
+  <link rel="stylesheet" href="./css/ansNote.css">
+
 
 </head>
 
@@ -34,7 +36,7 @@
       <h2> 우리는 서로에 대해 <br> 얼마나 알고 있을까? </h2>
       <h1 class="title"> [ 우정 모의고사 ] </h1>
       <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto mt-3">
-        <img src="./img/img.gif" alt="background" class="img-fluid">
+        <img src="./img/main.gif" alt="background" class="img-fluid">
       </div>
 
       <p class="subtext mt-4">눈빛만 봐도 알지롱!꒰◍ˊ◡ˋ꒱੭ु⁾⁾<br>우리 우정의 레벨이 궁금하다면<br> 하단의 버튼을 눌러주세요!</p>
@@ -74,13 +76,13 @@
       <div class="resultDesc">
       </div>
       <hr>
-      <p class="mt-4">오답노트로 친구를 더 공부하고 싶다면<br> 하단의 버튼을 눌러주세요!</p>
+      <p class="mt-4">친구를 더 공부하고 싶다면<br> 하단의 버튼을 눌러주세요!</p>
 
-      <button type="button" class="study py-2 px-3 mt-2">오답노트</button>
+      <button type="button" class="study py-2 px-3 mt-2" onclick="js:note(2)">다시풀기</button>
       <button type="button" class="kakao py-2 px-3 mt-2" onclick="js:kakaoShare()">공유하기</button>
       <button type="button" class="goback py-2 px-3 mt-2" onClick="window.location.reload()">돌아가기</button>
-
     </section>
+
     <script src="./js/data.js" charset="utf-8"></script>
     <script src="./js/start.js" charset="utf-8"></script>
     <script src="./js/share.js" charset="utf-8"></script>
