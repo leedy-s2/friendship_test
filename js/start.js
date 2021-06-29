@@ -62,8 +62,8 @@ function goMain(){
     point = calResult();
     var level = getKeyByValue(point);
     const friendName = document.querySelector('.friendName');
-    var self = document.querySelector('.btn_name').value;
-    var friend = document.querySelector('.btn_friend').value;
+    var self = document.querySelector('.txt_name').value;
+    var friend = document.querySelector('.txt_friend').value;
     friendName.innerHTML = self +'와 '+friend+'의';
 
     var friendScore = Math.round(point*100/endPoint);
