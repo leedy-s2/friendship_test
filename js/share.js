@@ -11,7 +11,7 @@ function kakaoShare(){
         'https://leedy-s2.github.io/friendship_test/img/main.gif',
       link: {
         mobileWebUrl: shareUrl,
-        WebUrl :shareUrl
+        webUrl :shareUrl
       },
     },
 
@@ -20,7 +20,7 @@ function kakaoShare(){
         title: '우정테스트하기',
         link: {
           mobileWebUrl: 'https://developers.kakao.com',
-          WebUrl :'https://developers.kakao.com'
+          webUrl :'https://developers.kakao.com'
         },
       },
     ]
