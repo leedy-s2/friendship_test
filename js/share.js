@@ -1,32 +1,25 @@
+const shareUrl = 'https://leedy-s2.github.io/friendship_test';
+
 function kakaoShare(){
   Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
-      title: '디저트 사진',
-      description: '아메리카노, 빵, 케익',
+      title: '우정 모의고사',
+      description: '우리 우정의 소소한 중간평가',
       imageUrl:
-        'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+        'https://leedy-s2.github.io/friendship_test/img/main.gif',
       link: {
-        mobileWebUrl: 'https://developers.kakao.com',
-        androidExecutionParams: 'test',
+        mobileWebUrl: shareUrl,
+        WebUrl :shareUrl
       },
     },
-    social: {
-      likeCount: 10,
-      commentCount: 20,
-      sharedCount: 30,
-    },
+
     buttons: [
       {
-        title: '웹으로 이동',
+        title: '우정테스트하기',
         link: {
           mobileWebUrl: 'https://developers.kakao.com',
-        },
-      },
-      {
-        title: '앱으로 이동',
-        link: {
-          mobileWebUrl: 'https://developers.kakao.com',
+          WebUrl :'https://developers.kakao.com'
         },
       },
     ]
