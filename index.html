@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="iszeroworld">
-  <meta name="keywords" content="소소한 우정테스트">
-  <meta name="dscription" content="소소한 우정테스트">
+  <meta name="keywords" content="우정 모의고사">
+  <meta name="dscription" content="우리 우정의 소소한 중간평가">
 
   <!--sns share -->
   <meta property="og:url" content="https://leedy-s2.github.io/friendship_test/" />
   <meta property="og:title" content="소소한 우정테스트" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="img/share.png" />
-  <meta property="og:description" content="소소한 " />
+  <meta property="og:description" content="소소한 우정테스트" />
 
   <!-- favicon-->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -32,14 +32,18 @@
     <!--메인 페이지 -->
     <section id="main" class="mx-auto my-3 py-5 px-1">
       <h2> 우리는 서로에 대해 <br> 얼마나 알고 있을까? </h2>
-      <h1 class="title">[ 소소한 우정테스트 ] </h1>
+      <h1 class="title"> [ 우정 모의고사 ] </h1>
       <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto mt-3">
         <img src="./img/img.gif" alt="background" class="img-fluid">
       </div>
 
       <p class="subtext mt-4">눈빛만 봐도 알지롱!꒰◍ˊ◡ˋ꒱੭ु⁾⁾<br>우리 우정의 레벨이 궁금하다면<br> 하단의 버튼을 눌러주세요!</p>
-      <button type="button" class="btn btn-outline-dark" onclick="js:begin()">당사자모드</button><br>
-      <button type="button" class="btn btn-outline-primary mt-2">친구들모드</button>
+
+      <input type="text" class="btn_name" placeholder="출제자 이름">
+      <button type="button" class="btn btn-outline-dark" onclick="js:begin(1)">출제</button>
+      <br>
+      <input type="text" class="btn_friend" placeholder="제출자 이름">
+      <button type="button" class="btn btn-outline-primary mt-2" onclick="js:begin(2)">풀기</button>
     </section>
 
 
@@ -60,7 +64,8 @@
 
     <!--결과 페이지-->
     <section id="result" class="mx-auto my-5 py-5 px-3">
-      <h2 class> 우리 우정의 레벨은? </h2>
+      <div class="friendName"></div>
+      <h2><div class="score"></div></h2>
       <div class="resultName">
       </div>
       <div id="resultImg" class="my-4 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto mt-3">
@@ -71,13 +76,21 @@
       <hr>
       <p class="mt-4">오답노트로 친구를 더 공부하고 싶다면<br> 하단의 버튼을 눌러주세요!</p>
 
-      점수랑 순위도 나오면 좋겠음.
-      <button type="button" class="study py-2 px-3 mt-2">오답노트</button><br>
-      <button type="button" class="kakao py-2 px-3 mt-2">공유하기</button>
+      <button type="button" class="study py-2 px-3 mt-2">오답노트</button>
+      <button type="button" class="kakao py-2 px-3 mt-2" onclick="js:kakaoShare()">공유하기</button>
+      <button type="button" class="goback py-2 px-3 mt-2" onClick="window.location.reload()">돌아가기</button>
 
     </section>
     <script src="./js/data.js" charset="utf-8"></script>
     <script src="./js/start.js" charset="utf-8"></script>
+    <script src="./js/share.js" charset="utf-8"></script>
+
+    </script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+    Kakao.init('6f043d45a62fe8bec49732246f97d4c3');
+    Kakao.isInitialized();
+    </script>
   </div>
 </body>
 </html>
