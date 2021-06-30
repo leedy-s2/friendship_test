@@ -32,10 +32,6 @@
   color: #FEE500;
 }
 
-.study:hover, .study:focus{
-  background-color: black;
-  color: whitesmoke;
-}
 
 .goback:hover, .goback:focus{
   background-color: black;
