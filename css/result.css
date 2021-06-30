@@ -52,7 +52,7 @@
 }
 
 
-.resultDesc, .subtext, .txt_name, .txt_friend, .friendName{
+.resultDesc, .friendName{
   font-family: 'DungGeunMo';
   text-align: center;
   font-size:20px;
