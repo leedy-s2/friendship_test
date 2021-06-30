@@ -20,8 +20,8 @@ function kakaoShare(){
       {
         title: '우정테스트하기',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl :'https://developers.kakao.com'
+        mobileWebUrl: shareUrl,
+        webUrl :shareUrl
         },
       },
     ]
