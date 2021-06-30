@@ -16,5 +16,15 @@ p{
 }
 
 .txt_name, .txt_friend{
+  font-family: 'DungGeunMo';
+  text-align: center;
+  font-size:20px;
   width:50%;
+}
+
+
+.subtext{
+  font-family: 'DungGeunMo';
+  text-align: center;
+  font-size:20px;
 }
